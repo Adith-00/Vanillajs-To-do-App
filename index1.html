@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="containers">
+        <div class="content">
+            <h1>To-Do List</h1>
+            <div class="input-section">
+                <input type="text" id="input" placeholder="Enter Your Task ">
+                <div id="buttons">
+                    <button id="add" onclick="add_task()" onclick="edit()">Add</button>
+                    <button id="complete"onclick="complete_task()">Completed</button>
+                    <button id="pending"onclick="pending_task()">Pending</button>
+                    <button id="all" onclick="all_task()">All Task</button>
+                    <button id="save" onclick="edited()">Save</button>
+                </div>
+                
+            </div>
+            <div class="disply">
+               
+                <div id="output"></div>
+                <div id="finish"></div>
+                <div id="in-complete"></div>
+            </div>
+        </div>    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script3.js"></script>
+</body>
+</html>
